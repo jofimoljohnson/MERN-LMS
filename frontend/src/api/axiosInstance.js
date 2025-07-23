@@ -1,6 +1,8 @@
 import axios from "axios";
 const axiosInstance=axios.create({
-    baseURL:"http://localhost:5000"
+    // baseURL:"http://localhost:5000"
+        baseURL:"https://mern-lms-zmng.onrender.com"
+
 })
 
 axiosInstance.interceptors.request.use(config=>{
