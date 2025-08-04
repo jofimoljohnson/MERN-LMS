@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 const AuthPage = () => {
     const [activeTab, setActiveTab] = useState("signin");
 
-    const { signInFormData, setSignInFormData, signUpFormData, 
-        setSignUpFormData,handleRegister,handleLogin } = useContext(AuthContext);
+    const { signInFormData, setSignInFormData, signUpFormData, setSignUpFormData, handleRegister, handleLogin } =
+        useContext(AuthContext);
 
     const handleTabChange = (value) => {
         setActiveTab(value);
@@ -59,6 +59,12 @@ const AuthPage = () => {
                                     />
                                 </CardContent>
                             </CardHeader>
+                            <div style={{ fontSize: "12px" }}>
+                                <p>demo student email:jofi@gmail.com</p>
+                                <p>demo Password:secret123</p>
+                                <p> Instructor email:john@gmail.com </p>
+                                <p>Password:secret123</p>
+                            </div>
                         </Card>
                     </TabsContent>
                     <TabsContent value="signup">
